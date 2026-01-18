@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Essa Kah Salah — Biografi</title>
+    <meta
+      name="description"
+      content="Officiell biografisajt för Essa Kah Salah. Från ex-kriminell till samhällsbyggare och författare till Gängledarens arv."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Essa Kah Salah</a>
+        <div class="nav-right">
+          <button class="cart-icon" type="button" data-open-cart aria-label="Öppna varukorg">
+            <svg class="cart-icon__glyph" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM6.2 6h13.4a1 1 0 0 1 .97 1.24l-1.7 7a1 1 0 0 1-.97.76H8.2a1 1 0 0 1-.97-.76L5.1 5H3a1 1 0 1 1 0-2h2.9a1 1 0 0 1 .97.76L7.7 12h9.5l1.2-5H6.5l-.3-1z"
+              />
+            </svg>
+            <span class="cart-count is-hidden" data-cart-count>0</span>
+          </button>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            Meny
+          </button>
+          <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
+            <a href="#om">Om</a>
+            <a href="#mission">Insats</a>
+            <a href="#bok">Boken</a>
+            <a href="#video">Video</a>
+            <a href="#kontakt">Kontakt</a>
+            <button class="cta cta-outline" type="button" data-open-cart>Varukorg</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/essa-hero-poster.jpg">
+          <source src="hero-mobile.mp4" type="video/mp4" media="(max-width: 720px)" />
+          <source src="assets/essa-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Biografi • Samhällsbyggare</p>
+            <h1 class="reveal" style="--delay: 0.2s">
+              Essa Kah Salah<br />
+              <span>från skugga till ansvar.</span>
+            </h1>
+            <p class="lead reveal" style="--delay: 0.3s">
+              Ex-kriminell som idag arbetar för att stärka samhället och X-cons genom föreläsningar,
+              mentorskap och samtal som skapar riktning.
+            </p>
+            <div class="hero-actions reveal" style="--delay: 0.4s">
+              <a class="cta" href="#kontakt">Föreläsningar</a>
+              <a class="cta cta-outline" href="#bok">Köp boken</a>
+            </div>
+            <div class="hero-stats reveal" style="--delay: 0.5s">
+              <div>
+                <span>20+</span>
+                <p>År livserfarenhet</p>
+              </div>
+              <div>
+                <span>1 mål</span>
+                <p>Tryggare framtid</p>
+              </div>
+              <div>
+                <span>100%</span>
+                <p>Ärlig berättelse</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card hero-card--desktop reveal" style="--delay: 0.35s">
+            <p class="eyebrow">Ny bok</p>
+            <h2>Gängledarens arv</h2>
+            <p>
+              En rå och hoppfull skildring om att bryta mönster, ta ansvar och bygga nytt för nästa
+              generation.
+            </p>
+            <a class="cta cta-dark" href="#bok">Upptäck boken</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="bok" class="section book">
+        <div class="container split">
+          <div class="book-info">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Boken</p>
+            <h2 class="reveal" style="--delay: 0.2s">Gängledarens arv</h2>
+            <p class="reveal" style="--delay: 0.3s">
+              En biografisk berättelse om att kliva ur våldets krets och ta ansvar för framtiden.
+              Boken är både en varning och en vägvisare.
+            </p>
+            <ul class="book-points reveal" style="--delay: 0.35s">
+              <li>Råa insikter från verkligheten</li>
+              <li>Strategier för förändring</li>
+              <li>Mentalt verktyg för nystart</li>
+            </ul>
+          </div>
+          <div class="book-card reveal" style="--delay: 0.25s">
+            <div class="book-cover">
+              <img src="bokforlag.webp" alt="Omslag: Gängledarens arv" />
+            </div>
+            <div class="book-meta">
+              <h3>Tryckt bok</h3>
+              <p class="price">249 kr</p>
+              <p>Leveranstid 3-5 dagar. Signerad upplaga vid förfrågan.</p>
+              <button
+                class="cta cta-dark"
+                type="button"
+                data-add-to-cart
+                data-product-id="gangledarens-arv"
+                data-product-name="Gängledarens arv"
+                data-product-price="249"
+                data-product-image="bokforlag.webp"
+              >
+                Lägg i varukorg
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="om" class="section about">
+        <div class="container split">
+          <div>
+            <p class="eyebrow reveal" style="--delay: 0.1s">Bakgrund</p>
+            <h2 class="reveal" style="--delay: 0.2s">Från kriminalitet till samhällsbyggare</h2>
+            <p class="reveal" style="--delay: 0.3s">
+              Essa Kah Salah har levt ett liv som få vågar prata om. Efter år i kriminalitet valde
+              han att bryta mönstret och använda sin erfarenhet till att hjälpa andra som står inför
+              samma vägval.
+            </p>
+            <p class="reveal" style="--delay: 0.35s">
+              Idag möter han skolor, kommuner och organisationer för att skapa broar mellan
+              generationer, minska återfall och ge X-cons en ny start.
+            </p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-card reveal" style="--delay: 0.2s">
+              <span>2005–2015</span>
+              <h3>Konflikter &amp; konsekvenser</h3>
+              <p>Lärde sig priset av val som drar andra in i skuggan.</p>
+            </div>
+            <div class="timeline-card reveal" style="--delay: 0.3s">
+              <span>2016–2021</span>
+              <h3>Omsvängning &amp; ansvar</h3>
+              <p>Omfamnade förändring, utbildning och arbete med utsatta.</p>
+            </div>
+            <div class="timeline-card reveal" style="--delay: 0.4s">
+              <span>2022–nu</span>
+              <h3>Bygger framtid</h3>
+              <p>Föreläsningar, mentorskap och boken som inspirerar nästa steg.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="section mission">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Insats</p>
+            <h2 class="reveal" style="--delay: 0.2s">Tre pelare som styr arbetet</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card reveal" style="--delay: 0.2s">
+              <h3>Förebyggande dialog</h3>
+              <p>Äkta samtal med ungdomar om konsekvenser, val och alternativ.</p>
+            </article>
+            <article class="card reveal" style="--delay: 0.3s">
+              <h3>Vägledning för X-cons</h3>
+              <p>Stöd i allt från arbete och boende till att bygga nya relationer.</p>
+            </article>
+            <article class="card reveal" style="--delay: 0.4s">
+              <h3>Samhällsbroar</h3>
+              <p>Bygger förtroende mellan myndigheter, civilsamhälle och individ.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="section video">
+        <div class="container split">
+          <div class="video-info">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Senaste video</p>
+            <h2 class="reveal" style="--delay: 0.2s">Samtal om förändring</h2>
+            <p class="reveal" style="--delay: 0.3s">
+              Se det senaste samtalet där Essa delar sin resa och hur han arbetar med att skapa
+              verklig förändring.
+            </p>
+          </div>
+          <div class="video-embed reveal" style="--delay: 0.25s">
+            <div class="video-frame" data-youtube="https://www.youtube.com/watch?v=fThV71_76_E&t=2873s">
+              <iframe
+                title="Senaste video med Essa Kah Salah"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section impact">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Påverkan</p>
+            <h2 class="reveal" style="--delay: 0.2s">Program och insatser</h2>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-card reveal" style="--delay: 0.2s">
+              <h3>Föreläsningar</h3>
+              <p>Skolor, kommuner och företag får konkreta verktyg och ärliga insikter.</p>
+              <span>Format: 60–90 min</span>
+            </article>
+            <article class="impact-card reveal" style="--delay: 0.3s">
+              <h3>Mentorskap</h3>
+              <p>Individanpassade program för X-cons som vill skapa nya vanor.</p>
+              <span>Program: 6 veckor</span>
+            </article>
+            <article class="impact-card reveal" style="--delay: 0.4s">
+              <h3>Strategiska råd</h3>
+              <p>Stöd till organisationer som vill stärka sitt förebyggande arbete.</p>
+              <span>Format: Konsultation</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow reveal" style="--delay: 0.1s">Kontakt</p>
+            <h2 class="reveal" style="--delay: 0.2s">Boka samtal eller föreläsning</h2>
+            <p class="reveal" style="--delay: 0.3s">
+              Berätta vad ni behöver hjälp med så återkommer vi med upplägg, tider och pris.
+            </p>
+            <div class="contact-details reveal" style="--delay: 0.35s">
+              <div>
+                <span>E-post</span>
+                <p>kontakt@essakahsalah.se</p>
+              </div>
+              <div>
+                <span>Telefon</span>
+                <p>+46 70 000 00 00</p>
+              </div>
+              <div>
+                <span>Bas</span>
+                <p>Stockholm, Sverige</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form reveal" style="--delay: 0.25s">
+            <label>
+              Namn
+              <input type="text" name="name" placeholder="Ditt namn" required />
+            </label>
+            <label>
+              E-post
+              <input type="email" name="email" placeholder="din@epost.se" required />
+            </label>
+            <label>
+              Ärende
+              <select name="topic">
+                <option>Föreläsning</option>
+                <option>Mentorskap</option>
+                <option>Mediaförfrågan</option>
+                <option>Övrigt</option>
+              </select>
+            </label>
+            <label>
+              Meddelande
+              <textarea name="message" rows="4" placeholder="Kort beskrivning"></textarea>
+            </label>
+            <button class="cta" type="submit">Skicka förfrågan</button>
+            <p class="fine-print">Svar inom 24 timmar. All kommunikation behandlas konfidentiellt.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Essa Kah Salah</h3>
+          <p>Biografi, föreläsningar och förändringsarbete.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#bok">Köp boken</a>
+          <a href="#video">Senaste video</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div>
+          <p>&copy; 2026 Essa Kah Salah. Alla rättigheter förbehållna.</p>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Din varukorg</h3>
+        <button class="icon-button" type="button" data-close-cart aria-label="Stäng varukorg">
+          ✕
+        </button>
+      </div>
+      <div class="cart-items" data-cart-items>
+        <p class="empty-state">Varukorgen är tom.</p>
+      </div>
+      <div class="cart-summary">
+        <div>
+          <span>Subtotal</span>
+          <span data-subtotal>0 kr</span>
+        </div>
+        <div>
+          <span>Frakt</span>
+          <span data-shipping>0 kr</span>
+        </div>
+        <div class="total">
+          <span>Total</span>
+          <span data-total>0 kr</span>
+        </div>
+        <button class="cta cta-dark" type="button" data-checkout>Gå till kassan</button>
+      </div>
+    </aside>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+
+    <div class="modal" id="checkout-modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="icon-button" type="button" data-close-checkout aria-label="Stäng kassan">
+          ✕
+        </button>
+        <h3>Kassa</h3>
+        <p class="modal-subtitle">Fyll i dina uppgifter så bekräftar vi din beställning.</p>
+        <div class="checkout-summary">
+          <div>
+            <span>Order</span>
+            <span data-checkout-items>0 st</span>
+          </div>
+          <div>
+            <span>Total</span>
+            <span data-checkout-total>0 kr</span>
+          </div>
+        </div>
+        <div class="checkout-items" data-checkout-list></div>
+        <form class="checkout-form">
+          <label>
+            Namn
+            <input type="text" name="checkout-name" required />
+          </label>
+          <label>
+            E-post
+            <input type="email" name="checkout-email" required />
+          </label>
+          <label>
+            Adress
+            <input type="text" name="checkout-address" required />
+          </label>
+          <label>
+            Meddelande
+            <textarea name="checkout-message" rows="3"></textarea>
+          </label>
+          <button class="cta" type="submit">Skicka order</button>
+        </form>
+        <p class="checkout-feedback" data-checkout-feedback></p>
+        <p class="fine-print">Detta är en förbeställning. Betalningslänk skickas via e-post.</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
