@@ -8,6 +8,32 @@ if (navToggle && siteNav) {
   });
 }
 
+const heroVideo = document.querySelector(".hero-video");
+
+if (heroVideo) {
+  const tryPlayHero = () => {
+    heroVideo.muted = true;
+    heroVideo.playsInline = true;
+    const playPromise = heroVideo.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
+  };
+
+  if (heroVideo.readyState >= 2) {
+    tryPlayHero();
+  } else {
+    heroVideo.addEventListener("loadedmetadata", tryPlayHero, { once: true });
+  }
+
+  document.addEventListener("pointerdown", tryPlayHero, { once: true, passive: true });
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      tryPlayHero();
+    }
+  });
+}
+
 const cartDrawer = document.querySelector(".cart-drawer");
 const cartOverlay = document.querySelector("[data-cart-overlay]");
 const cartItems = document.querySelector("[data-cart-items]");
