@@ -278,8 +278,8 @@
               Essa Kah Sallah erbjuder uppskattade föreläsningar och workshops utifrån sitt liv,
               kriminella tankemönster och vad som krävs för att lämna en destruktiv livsstil.
               Föreläsningarna anpassas efter era behov och det finns även möjlighet att beställa
-              boken "Gängledarens arv" i samband med bokning. Skicka ett mail med er förfrågan för
-              prisuppgift.
+              boken "Gängledarens arv" i samband med bokning. Skicka ett mail till
+              <a href="mailto:we@storyhood.se">we@storyhood.se</a> för prisuppgift.
             </p>
             <a class="cta reveal" style="--delay: 0.35s" href="#kontakt">Kontakt</a>
           </div>
@@ -449,7 +449,7 @@
             <div class="contact-details reveal" style="--delay: 0.4s">
               <div>
                 <span>E-post</span>
-                <p>kontakt@essakahsalah.se</p>
+                <p><a href="mailto:we@storyhood.se">we@storyhood.se</a></p>
               </div>
               <div>
                 <span>Telefon</span>
@@ -530,53 +530,14 @@
           <span>Total</span>
           <span data-total>0 kr</span>
         </div>
-        <button class="cta cta-dark" type="button" data-checkout>Gå till kassan</button>
+        <a
+          class="cta cta-dark"
+          href="https://storyhood.se/checkouts/cn/hWN8TRSNE7yQeAwDy33VuPXK/sv-se?_r=AQABKR09Sig5BH8xUlvYq9jOj25_6iXynHmqLRWX4re5Slw&amp;auto_redirect=false&amp;edge_redirect=true&amp;skip_shop_pay=true"
+          >Gå till checkout</a>
       </div>
     </aside>
 
     <div class="cart-overlay" data-cart-overlay></div>
-
-    <div class="modal" id="checkout-modal" aria-hidden="true">
-      <div class="modal-content">
-        <button class="icon-button" type="button" data-close-checkout aria-label="Stäng kassan">
-          ✕
-        </button>
-        <h3>Kassa</h3>
-        <p class="modal-subtitle">Fyll i dina uppgifter så bekräftar vi din beställning.</p>
-        <div class="checkout-summary">
-          <div>
-            <span>Order</span>
-            <span data-checkout-items>0 st</span>
-          </div>
-          <div>
-            <span>Total</span>
-            <span data-checkout-total>0 kr</span>
-          </div>
-        </div>
-        <div class="checkout-items" data-checkout-list></div>
-        <form class="checkout-form">
-          <label>
-            Namn
-            <input type="text" name="checkout-name" required />
-          </label>
-          <label>
-            E-post
-            <input type="email" name="checkout-email" required />
-          </label>
-          <label>
-            Adress
-            <input type="text" name="checkout-address" required />
-          </label>
-          <label>
-            Meddelande
-            <textarea name="checkout-message" rows="3"></textarea>
-          </label>
-          <button class="cta" type="submit">Skicka order</button>
-        </form>
-        <p class="checkout-feedback" data-checkout-feedback></p>
-        <p class="fine-print">Detta är en förbeställning. Betalningslänk skickas via e-post.</p>
-      </div>
-    </div>
 
     <script src="app.js"></script>
   </body>
