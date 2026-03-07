@@ -38,6 +38,7 @@
           <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
             <a href="#om">Om</a>
             <a href="#forelasningar">Föreläsningar</a>
+            <a href="#bokning">Boka Essa</a>
             <a href="#bok">Boken</a>
             <a href="#video">Video</a>
             <a href="#media">Media</a>
@@ -279,7 +280,7 @@
               boken "Gängledarens arv" i samband med bokning. Skicka ett mail till
               <a href="mailto:we@storyhood.se">we@storyhood.se</a> för prisuppgift.
             </p>
-            <a class="cta reveal" style="--delay: 0.35s" href="#kontakt">Kontakt</a>
+            <a class="cta reveal" style="--delay: 0.35s" href="#bokning">Boka datum</a>
           </div>
           <div class="card-grid">
             <article class="card reveal" style="--delay: 0.2s">
@@ -294,6 +295,119 @@
               <h3>Vägen ut</h3>
               <p>Vad som krävs för att bryta en destruktiv livsstil och bygga nytt.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="bokning" class="section booking">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow reveal" style="--delay: 0.1s">Bokning</p>
+            <h2 class="reveal" style="--delay: 0.2s">Boka Essa för podcast eller föreläsning</h2>
+            <p class="reveal" style="--delay: 0.3s">
+              Välj en vardag i kalendern för att se lediga tider. Helger och blockerade datum går
+              inte att boka.
+            </p>
+          </div>
+          <div class="booking-shell reveal" style="--delay: 0.2s">
+            <aside class="booking-panel booking-panel--info" aria-label="Bokningsinformation">
+              <p class="booking-label">Essa Kah Sallah</p>
+              <h3>Bokningsförfrågan</h3>
+              <p>
+                Skicka en förfrågan för podcast eller föreläsning. Vi återkommer med bekräftelse,
+                upplägg och pris.
+              </p>
+              <ul class="booking-facts">
+                <li>Standardlängd: 45-90 min</li>
+                <li>Format: Online eller på plats</li>
+                <li>Tidzon: Europe/Stockholm (CET/CEST)</li>
+              </ul>
+              <div class="booking-legend" aria-label="Statusförklaring">
+                <span class="booking-chip booking-chip--available">Ledig</span>
+                <span class="booking-chip booking-chip--few">Få platser</span>
+                <span class="booking-chip booking-chip--full">Fullbokad</span>
+                <span class="booking-chip booking-chip--blocked">Ej bokningsbar</span>
+              </div>
+            </aside>
+
+            <div class="booking-panel booking-panel--calendar">
+              <div class="booking-calendar-head">
+                <h3>Välj datum</h3>
+                <div class="booking-calendar-controls">
+                  <button type="button" class="booking-nav" data-booking-prev aria-label="Föregående månad">
+                    &#8249;
+                  </button>
+                  <p class="booking-month" data-booking-month></p>
+                  <button type="button" class="booking-nav" data-booking-next aria-label="Nästa månad">
+                    &#8250;
+                  </button>
+                </div>
+              </div>
+              <div class="booking-weekdays" aria-hidden="true">
+                <span>Mån</span>
+                <span>Tis</span>
+                <span>Ons</span>
+                <span>Tor</span>
+                <span>Fre</span>
+                <span>Lör</span>
+                <span>Sön</span>
+              </div>
+              <div class="booking-calendar-grid" data-booking-grid role="grid" aria-label="Månadsschema"></div>
+            </div>
+
+            <aside class="booking-panel booking-panel--times">
+              <h3 data-booking-selected-heading>Välj en dag</h3>
+              <p class="booking-note" data-booking-selected-note>
+                Klicka på ett datum i kalendern för att se tillgängliga tider.
+              </p>
+              <div class="booking-times" data-booking-times></div>
+              <form class="booking-form" data-booking-form hidden>
+                <h4>Skicka förfrågan</h4>
+                <input type="hidden" name="date" />
+                <input type="hidden" name="time" />
+                <label>
+                  Namn
+                  <input type="text" name="name" required placeholder="Ditt namn" />
+                </label>
+                <label>
+                  E-post
+                  <input type="email" name="email" required placeholder="din@epost.se" />
+                </label>
+                <label>
+                  Organisation
+                  <input type="text" name="organization" placeholder="Skola, företag eller podd" />
+                </label>
+                <label>
+                  Typ av bokning
+                  <select name="type" required>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Föreläsning">Föreläsning</option>
+                  </select>
+                </label>
+                <label>
+                  Format
+                  <select name="format" required>
+                    <option value="Online">Online</option>
+                    <option value="På plats">På plats</option>
+                  </select>
+                </label>
+                <label>
+                  Syfte och önskemål
+                  <textarea
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="Vad vill ni att samtalet eller föreläsningen ska fokusera på?"
+                  ></textarea>
+                </label>
+                <label class="booking-consent">
+                  <input type="checkbox" name="consent" required />
+                  <span>Jag samtycker till att uppgifterna används för bokningshantering.</span>
+                </label>
+                <button class="cta" type="submit">Skicka förfrågan</button>
+                <p class="booking-feedback" data-booking-feedback aria-live="polite"></p>
+              </form>
+            </aside>
           </div>
         </div>
       </section>
@@ -497,6 +611,7 @@
         </div>
         <div class="footer-links">
           <a href="#bok">Köp boken</a>
+          <a href="#bokning">Boka Essa</a>
           <a href="#video">Senaste video</a>
           <a href="#kontakt">Kontakt</a>
         </div>
